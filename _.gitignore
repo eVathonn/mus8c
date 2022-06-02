@@ -1,0 +1,14 @@
+*.session
+*.session-journal
+.env
+__pycache__
+.idea
+.vscoderaw
+_files
+downloads
+venvlocal
+.env
+*.jpg
+*png
+*.raw
+*.log
