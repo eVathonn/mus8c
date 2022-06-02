@@ -53,33 +53,32 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""✯ **مرحبا عزيزي ↤ {message.from_user.mention()} !**\n
-✯ **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) **
-** ◈︙يتيح لك تشغيل الموسيقى والفيديو في مجموعات . **
-💡◈︙اضفني مشرف مع صلاحيه اضافه مستخدمين .**
-🔖 ** ◈︙الحساب المساعد :  @{ASSISTANT_NAME} **
-◈︙المطور : **[{ALIVE_NAME}](https://t.me/{OWNER_NAME}) **
+        f"""᥀ **هݪاެ عمࢪي ↤ {message.from_user.mention()} !**\n
+᥀ **اެناެ بۅٛت ݪتشغيݪ اެݪاެغاެني في اެݪمكاެݪماެت اެݪصۅٛتيةه  • **
+** ᥀︙ݪمعࢪفة طࢪيقة تفعيݪ هذاެ اެݪبۅٛت اެضغط عݪى » طࢪيقة اެݪتفعيݪ ! • . **
+᥀︙ݪمعࢪفةه اެۅٛاެمࢪ هذاެ اެݪبۅٛت اެضغط عݪى » اެۅٛاެمࢪ اެݪتشغيݪ ! • .**
+ 
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "‹ اضغط لأضافه البوت لمجموعتك ›",
+                        "‹ اެضف اެݪبۅٛت في مجمۅٛعتك ›",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("‹ طــريــقــة الاســتخــدام ›", callback_data="cbhowtouse")],
-                [InlineKeyboardButton("‹ الاوامــر الكامله المعربــه ›", callback_data="cbvamp")],                 
+                [InlineKeyboardButton("‹ طࢪيقة اެݪتفعيݪ ›", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("‹ اެۅٛاެمࢪ اެݪتشغيݪ ›", callback_data="cbvamp")],                 
                 [
-                    InlineKeyboardButton("‹ الاوامــــر ›", callback_data="cbcmds"),
-                    InlineKeyboardButton("‹ الــمــطــور ›", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("‹ اެۅٛاެمࢪ اެݪمشࢪفين ›", callback_data="cbcmds"),
+                    InlineKeyboardButton("‹ اެݪمبࢪمج ›", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ كــروب الــدعـم › ", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "‹ كࢪۅٛب اެݪدعم › ", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "‹ 𝐒𝐎𝐔𝐑𝐂𝐄 › ", url=f"https://t.me/EITHON1"
+                        "‹ اެݪسۅٛࢪس › ", url=f"https://t.me/AOOOU"
                     ),
                 ],
                 [
@@ -110,21 +109,21 @@ async def alive(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ كــروب الــدعـم › ", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "‹ كࢪۅٛب اެݪدعم › ", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "‹ 𝐒𝐎𝐔𝐑𝐂𝐄 › ", url=f"https://t.me/EITHON1"
+                        "‹ اެݪسۅٛࢪس › ", url=f"https://t.me/AOOOU"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ اضافه البوت اللي مجموعتك › ", url="https://t.me/{BOT_USERNAME}?startgroup=true"
+                        "‹ اެضف اެݪبۅٛت في مجمۅٛعتك › ", url="https://t.me/{BOT_USERNAME}?startgroup=true"
                 ),
             ]
         ]
     ) 
 
-    alive = f"**مرحبآ  {message.from_user.mention()}, انا {BOT_NAME}**\n\n✯ البوت يعمل بشكل طبيعي\n✯المبرمج : [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✯ اصدار Bot : `v{__version__}`\n✯ اصدار Pyrogram : `{pyrover}`\n✯ اصدار Python: `{__python_version__}`\n✯ اصدار PyTgCalls : `{pytover.__version__}`\n✯ وقت التشغيل: `{uptime}`\n\n**شكرًا لإضافتي هنا ، لتشغيل الفيديو والموسيقى على دردشة الفيديو الخاصة بمجموعتك ** ✯"
+    alive = f"**مرحبآ  {message.from_user.mention()}, انا {BOT_NAME}**\n\n᥀ البوت يعمل بشكل طبيعي\n᥀المبرمج : [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n᥀ اصدار Bot : `v{__version__}`\n᥀ اصدار Pyrogram : `{pyrover}`\n᥀ اصدار Python: `{__python_version__}`\n᥀ اصدار PyTgCalls : `{pytover.__version__}`\n᥀ وقت التشغيل: `{uptime}`\n\n**شكرًا لإضافتي هنا ، لتشغيل الفيديو والموسيقى على دردشة الفيديو الخاصة بمجموعتك ** ᥀"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
@@ -138,7 +137,7 @@ async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
     delta_ping = time() - start
-    await m_reply.edit_text("✯ `PONG!!`\n" f"✯️ `{delta_ping * 1000:.3f} ms`")
+    await m_reply.edit_text("᥀ `PONG!!`\n" f"᥀️ `{delta_ping * 1000:.3f} ms`")
 
 
 @Client.on_message(command(["uptime","الوقت", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
@@ -147,7 +146,7 @@ async def get_uptime(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        "✯ bot status:\n"
+        "᥀ bot status:\n"
         f"• **uptime:** `{uptime}`\n"
         f"• **start time:** `{START_TIME_ISO}`"
     )
