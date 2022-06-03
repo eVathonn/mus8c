@@ -121,7 +121,7 @@ async def play(c: Client, m: Message):
 
     if replied:
         if replied.audio or replied.voice:
-            suhu = await replied.reply("📥 **الحساب المساعد منضم بلفعل وجاري تنزيل الصوت...**")
+            suhu = await replied.reply("📍 **الحساب المساعد منضم بلفعل وجاري تنزيل الصوت...**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -169,7 +169,7 @@ async def play(c: Client, m: Message):
                     "» الرد على ** ملف صوتي ** أو ** أكتب شي للبحث**"
                 )
             else:
-                suhu = await c.send_message(chat_id, "🔎 **Searching...**")
+                suhu = await c.send_message(chat_id, "📍 **Searching...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 if search == 0:
@@ -220,7 +220,7 @@ async def play(c: Client, m: Message):
                 "» الرد على ** ملف صوتي ** أو ** أكتب شي للبحث**"
             )
         else:
-            suhu = await c.send_message(chat_id, "🔎 **جاري البحث...**")
+            suhu = await c.send_message(chat_id, "📍 **جاري البحث...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
